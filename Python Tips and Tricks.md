@@ -76,3 +76,68 @@ a_string = input().split(' ')
 print(' '.join((word.capitalize() for word in a_string)))
 ```
 
+## 10. Use of sort() and sorted()
+
+https://realpython.com/python-sort/
+
+```python
+# Sorting the original list and not assigning to other variable
+# Use sort()
+arr.sort()
+
+# Sorting the original list and assigning to a new variable
+# Use sorted()
+new_arr = sorted(arr)
+```
+
+Both have very different characteristics when it comes to output and in-place modifications, so make sure you think through any application functionality or program that will be using `.sort()` as it can irrevocably overwrite data.
+
+## 11. Important conclusion on division
+
+When we divide any `int` number using `/` operator, we obtain a result as `float`  not as `int`
+
+```python
+#Example
+n = len(arr)
+print(arr[n/2])			# Throws Error
+print(arr[int(n/2)])	# Correct way
+```
+
+## 12. Understanding For loop in python
+
+Python does not give standard for loop conversion like that of C++ or C#. 
+
+`Remember this:`  Python FOR loops are same as FOREACH of C++/C#
+
+```python
+lis = [1, 2, 3, 4, 5]
+for i in range(len(lis)):
+    print(lis[i])
+    i += 2
+# O/P ==> 1 2 3 4 5
+```
+
+`Alternate way:` Use while loop like this when needed controlled FOR kind of loop
+
+```python
+lis = [1, 2, 3, 4, 5]
+i = 0
+while(i < len(lis)):
+    print(lis[i], end = " ")
+    i += 2
+# O/P ==> 1 3 5
+```
+
+## 13. Positive Differance between 2 number (Mod Diff)
+
+```python
+abs(a-b)
+```
+
+## 14. List to String
+
+```python
+s = ['Geeks', 'for', 'Geeks']
+print(' '.join(s))
+```
+
